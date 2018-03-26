@@ -1,0 +1,329 @@
+body {
+  background-color: #E6E6E6;
+  margin: 0;
+  font-family: 'Trebuchet MS'; }
+  body article {
+    max-width: 1052px;
+    margin: auto;
+    padding: 0 10px; }
+    body article p {
+      color: #4D4D4D;
+      font-size: 14px;
+      line-height: 20px; }
+  body nav {
+    width: 100%;
+    background-color: #D3135A; }
+    body nav ul li {
+      display: inline-block; }
+      body nav ul li a {
+        text-decoration: none;
+        color: #000;
+        font-size: 14px;
+        margin-left: 12px; }
+        body nav ul li a:hover {
+          color: #000 !important; }
+    body nav article {
+      display: flex;
+      justify-content: flex-end;
+      height: 60px; }
+    body nav .bot {
+      justify-content: space-between; }
+      body nav .bot header h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 60px;
+        line-height: 30px;
+        color: #FFC2DD; }
+      body nav .bot ul.nav-bar {
+        margin: 0;
+        line-height: 60px; }
+        body nav .bot ul.nav-bar li.dropdown {
+          position: relative; }
+          body nav .bot ul.nav-bar li.dropdown .dropbtn {
+            color: #fff;
+            font-size: 20px;
+            padding-right: 0px;
+            padding-left: 20px;
+            border: none;
+            cursor: pointer;
+            background-color: #D3135A; }
+          body nav .bot ul.nav-bar li.dropdown .dropdown-content {
+            display: none;
+            position: absolute;
+            right: -32px;
+            padding-left: 0px;
+            background-color: #4D4D4D;
+            margin: auto;
+            min-width: 150px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1; }
+            body nav .bot ul.nav-bar li.dropdown .dropdown-content li {
+              margin: 0px;
+              padding: 0px;
+              display: block;
+              width: 100%;
+              height: 25px;
+              line-height: 25px;
+              margin-left: 5px;
+              position: relative;
+              padding: 2px 0px;
+              top: -10px; }
+              body nav .bot ul.nav-bar li.dropdown .dropdown-content li a {
+                margin: 0px;
+                color: #fff; }
+            body nav .bot ul.nav-bar li.dropdown .dropdown-content .square {
+              height: 20px;
+              width: 20px;
+              margin: auto;
+              position: relative;
+              top: -10px;
+              background-color: #4D4D4D;
+              transform: rotate(45deg); }
+      body nav .bot .draw-x {
+        display: none; }
+  body .text {
+    display: flex;
+    margin-top: 38px; }
+    body .text .container {
+      display: flex;
+      flex-wrap: wrap; }
+      body .text .container section {
+        padding: 20px;
+        box-sizing: border-box; }
+      body .text .container .top-text {
+        flex: 100%;
+        background-color: #fff; }
+        body .text .container .top-text header h1 {
+          font-size: 37.5px;
+          margin: 5px 0; }
+        body .text .container .top-text p {
+          margin-bottom: 24px; }
+      body .text .container .bot-text {
+        flex: 45%;
+        background-color: #fff;
+        margin-top: 20px; }
+        body .text .container .bot-text header h3 {
+          margin-top: 0px;
+          margin-bottom: 20px;
+          font-size: 24px; }
+        body .text .container .bot-text p {
+          margin: 0px;
+          line-height: 24px; }
+      body .text .container .bot-text:nth-child(3) {
+        margin-left: 20px; }
+      body .text .container .blue-text p {
+        color: #0071BC;
+        font-size: 14px;
+        line-height: 20px; }
+      body .text .container .blue-text p:nth-child(3) {
+        border-top: 2px solid #CCC;
+        border-bottom: 2px solid #CCC;
+        padding: 8px 0px;
+        margin: 8px 0px; }
+    body .text aside section {
+      padding-left: 20px; }
+      body .text aside section header {
+        border-bottom: 3px solid #000; }
+        body .text aside section header h3 {
+          font-size: 24px;
+          margin-top: 0; }
+      body .text aside section p {
+        margin-bottom: 25px; }
+      body .text aside section form {
+        padding: 20px;
+        border: 1px solid #888; }
+        body .text aside section form label {
+          display: inline-block;
+          margin-bottom: 10px; }
+        body .text aside section form label:not(:first-child) {
+          margin-top: 20px; }
+        body .text aside section form input {
+          width: 240px;
+          height: 30px;
+          border: 1px solid #888; }
+          body .text aside section form input::placeholder {
+            font-size: 14px;
+            padding-left: 10px;
+            color: #929292; }
+        body .text aside section form .error-style {
+          border: 1px solid red; }
+        body .text aside section form textarea {
+          width: 240px;
+          height: 130px;
+          resize: none;
+          border: 1px solid #888; }
+        body .text aside section form button {
+          display: inline-block;
+          width: 110px;
+          height: 36px;
+          margin-top: 16px;
+          background-color: #D3135A;
+          color: #fff;
+          font-size: 14px;
+          letter-spacing: 2px;
+          text-transform: uppercase; }
+  body .text-bottom section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #CCC;
+    margin: 20px 0px; }
+    body .text-bottom section p {
+      padding: 20px; }
+  body footer {
+    width: 100%;
+    background-color: #666; }
+    body footer nav {
+      background: none; }
+      body footer nav ul {
+        padding-left: 0px;
+        margin: 0px; }
+        body footer nav ul li {
+          margin-top: 20px;
+          margin-bottom: 10px; }
+          body footer nav ul li:nth-child(-n+5):after {
+            content: "|";
+            color: #fff;
+            padding-left: 10px;
+            padding-right: 5px;
+            font-size: 12px; }
+          body footer nav ul li a {
+            color: #fff;
+            margin-left: 0px;
+            font-size: 12px; }
+    body footer section {
+      display: flex; }
+      body footer section header {
+        align-self: flex-end;
+        min-width: 120px;
+        margin-left: 25px;
+        margin-bottom: 15px; }
+        body footer section header h1 {
+          font-size: 31px;
+          color: #fff;
+          margin: 0px; }
+      body footer section p {
+        font-size: 12px;
+        color: #B3B3B3;
+        line-height: 16px;
+        margin-bottom: 20px; }
+
+@media only screen and (max-width: 990px) {
+  body .text .container .bot-text {
+    flex: 100%; }
+  body .text .container .bot-text:nth-child(3) {
+    margin-left: 0px; } }
+@media only screen and (min-width: 768px) {
+  body nav article.bot li.dropdown:hover .dropdown-content {
+    display: block; } }
+@media only screen and (max-width: 768px) {
+  body nav .top {
+    display: none; }
+  body nav article .mobile-bar {
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 60px; }
+    body nav article .mobile-bar ul.nav-bar {
+      position: relative;
+      left: 768px;
+      padding: 0px;
+      transition: 0.3s; }
+      body nav article .mobile-bar ul.nav-bar li {
+        display: block;
+        text-align: center;
+        background-color: #D3135A; }
+  body nav article .show {
+    display: block !important;
+    transform: translateX(-768px) !important; }
+  body nav .bot {
+    padding: 0px; }
+    body nav .bot header {
+      margin-left: 20px; }
+      body nav .bot header h1 {
+        font-size: 24px;
+        line-height: 60px; }
+    body nav .bot .draw-x {
+      display: block;
+      cursor: pointer;
+      line-height: 60px;
+      position: relative;
+      width: 30px;
+      height: 40px;
+      margin-top: 18px;
+      margin-right: 20px; }
+      body nav .bot .draw-x .line {
+        position: absolute;
+        display: inline-block;
+        height: 4px;
+        width: 35px;
+        border-radius: 4px;
+        background-color: #fff;
+        transition: all 0.7s; }
+      body nav .bot .draw-x #mid {
+        top: 10px; }
+      body nav .bot .draw-x #bot {
+        top: 20px; }
+      body nav .bot .draw-x .top {
+        transform: rotate(135deg) !important;
+        margin-top: 10px; }
+      body nav .bot .draw-x .mid {
+        transform: rotate(135deg) !important;
+        top: 0 !important;
+        margin-top: 10px; }
+      body nav .bot .draw-x .bot {
+        transform: rotate(-135deg) !important;
+        top: 0 !important;
+        margin-top: 10px; }
+  body .text {
+    flex-wrap: wrap; }
+    body .text aside {
+      margin-top: 20px; }
+      body .text aside section {
+        padding-left: 0px; }
+        body .text aside section form input {
+          width: 100%; }
+        body .text aside section form textarea {
+          width: 100%; }
+        body .text aside section form button {
+          width: 100%; } }
+@media only screen and (max-width: 568px) {
+  body article {
+    padding: 0px; }
+  body .text {
+    flex-wrap: wrap; }
+    body .text aside section header {
+      margin: 0 20px; }
+    body .text aside section p {
+      padding: 0 20px; }
+    body .text aside section form {
+      border: none; }
+  body .text-bottom section {
+    flex-wrap: wrap; }
+    body .text-bottom section p {
+      flex: 100%;
+      margin: 0px; }
+  body footer article nav {
+    text-align: center; }
+    body footer article nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding-top: 10px; }
+      body footer article nav ul li {
+        flex: 50%;
+        margin: 10px 0px; }
+        body footer article nav ul li:nth-child(-n+5):after {
+          content: "";
+          padding: 0px; }
+        body footer article nav ul li a {
+          font-size: 16px; }
+  body footer article section {
+    flex-wrap: wrap;
+    padding: 10px; }
+    body footer article section p {
+      flex: 100%;
+      text-align: center; }
+    body footer article section header {
+      margin: 0px auto 15px auto; } }
+
+/*# sourceMappingURL=style.css.map */
